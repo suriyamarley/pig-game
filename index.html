@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Custom Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+
+    <title>Dice Game</title>
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--normalize CSS -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+   
+    <main>
+      <section class="about">
+        <h1>Dice Game 🎲</h1>
+        <p>1️⃣ Roll the die as many times as you want!</p>
+        <p>2️⃣ Hold your current score before "1" is rolled</p>
+        <p>3️⃣ Winner must get a total of 100</p>
+      </section>
+
+      <section id="player--0" class="active--player">
+        <h2>Player 1</h2>
+        <div class="stats">
+          <div class="current">
+            <p>Current</p>
+            <p id="current--0" class="score">0</p>
+          </div>
+          <div class="total">
+            <p>Total</p>
+            <p id="total--0" class="score">13</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="game-options">
+        <img src="./images/dice-1.png" class="dice" alt="Playing dice" />
+        <div>
+          <button class="btn-reset">🔄 Reset</button>
+          <button class="btn-roll">🎲 Roll</button>
+          <button class="btn-hold">📥 Hold</button>
+          <h2 class="result close"></h2>
+        </div>
+      </section>
+
+      <section id="player--1">
+        <h2>Player 2</h2>
+        <div class="stats">
+          <div class="current">
+            <p>Current</p>
+            <p id="current--1" class="score">0</p>
+          </div>
+          <div class="total">
+            <p>Total</p>
+            <p id="total--1" class="score">25</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <ul class="social">
+          <li>
+            <a href="https://www.instagram.com/itz_me_kitkat_boy/" target="_blank"
+              ><span class="fab fa-instagram" aria-hidden="true"></span
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/suriyamarley" target="_blank"
+              ><span class="fab fa-github" aria-hidden="true"></span
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+
+  <!-- Custom JavaScript -->
+  <script src="./scripts/script.js"></script>
+</html>
